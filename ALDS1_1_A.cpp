@@ -8,7 +8,8 @@ int main()
   cin>>n;
   for(int i=0;i<n;i++)
   {
-      vector <int> 
+      vector <int>
+  }for (size_t i = 0; i < count; i++) {
   }
 
 }
