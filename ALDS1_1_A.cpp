@@ -10,6 +10,13 @@ int main()
   {
     cin >> num[i];
   }
+
+  for(int i = 0;i <n-1;i++)
+  {
+    cout<<num[i]<<" ";
+  }
+  cout << num[n-1] << endl;
+
   for (int i = 1; i < n; i++) {
       v = num[i];
       j = i - 1;
@@ -25,7 +32,6 @@ int main()
     cout<<num[i]<<" ";
   }
   cout << num[n-1] << endl;
-
   }
 
 }
