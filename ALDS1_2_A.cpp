@@ -1,15 +1,23 @@
 #include <iostream>
-#include <algorithm>
-#include <climits>
 using namespace std;
 int main(){
-      ios::sync_with_stdio(false);
-      int n,ans = INT_MIN,minnum = INT_MAX,tmp;
-      cin >> n;
-      for(int i= 0;i<n;i++){
-            cin >> tmp;
-            if(i!=0) ans = max(ans,tmp - minnum);
-            minnum = min(tmp,minnum);
+      int n,count=0;
+      cin>> n;
+      int num[n];
+      for(int i= 0;i<n;i++)
+            cin>>num[i];
+      bool flag=true;
+      while(flag){
+            flag=false;
+            for(int j = n-1 ; j>0;j--){
+                  if(num[j]<num[j-1]){
+                        swap(num[j],num[j-1]);
+                        flag = true;
+                        count++;
+                  }
+            }
       }
-      cout << ans << endl;
+      for(int i= 0;i<n-1;i++)
+            cout<<num[i]<<" ";
+      cout<<num[n-1]<<endl<<count<<endl;
 }
