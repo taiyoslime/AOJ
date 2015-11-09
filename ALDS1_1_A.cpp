@@ -33,5 +33,4 @@ int main()
   }
   cout << num[n-1] << endl;
   }
-
 }
