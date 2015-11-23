@@ -1,10 +1,8 @@
 #include <iostream>
 using namespace std;
-
 int a,b,ans = -1,map[10003][13],table[10003];
 int rmax(int _array[]){
       int ptable[13],ans = 0,count;
-
       for(int i = 0;i < b;i++){
             count = 0;
             for(int j= 0;j<a;j++){
@@ -19,7 +17,6 @@ int rmax(int _array[]){
       cout << ans << endl;
       return ans;
 }
-
 void dfs(int array[],int num){
       if(num == a){
             ans = max(ans,rmax(array));
