@@ -1,29 +1,32 @@
 #include <iostream>
 #include <string>
 using namespace std;
-
 string str,tmp;
 
-int judge(int num,string jud)
+int judge(string _judge)
 {
-      if(jud.find(str) != string::npos)
+      if(_judge.find(str) != string::npos)
             return 1;
       else
       {
-            if(num == tmp.length()-1)
-                  return 0;
-            else
+            for (int i = 1 ; i < tm.length()/2 ; i++)
             {
-                  string f;
-                  for(int i = 0; i < num ; i++)
+                  for (int j = 0 ; j < i ; j++)
                   {
-                        f +=
+                        for (int k = 0; i + k < tm.length();k += j)
+                        {
 
+                        }
                   }
+
             }
+
       }
 
+      return 0;
 }
+
+
 
 int main()
 {
@@ -33,7 +36,7 @@ int main()
       for (int i = 0;i < x ; i++)
       {
             cin >> tmp;
-            ctn += judge(0,tmp);
+            ctn += judge(tmp);
       }
       cout << ctn << endl;
       return 0;
