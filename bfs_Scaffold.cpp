@@ -53,6 +53,7 @@ int main(){
                         /* 答えの処理 */
                         break;
             }
+
             for(int j = 0;j < dx.size();j++)
             {
                   int nx = p.first + dx[j],ny = p.second+ dy[j];
@@ -62,9 +63,12 @@ int main(){
                               dis[nx][ny] = dis[p.first][p.second]+1/*←重み*/;
                               que.push(make_pair(nx,ny));
                   }
-
-                  }
+                  
             }
+
+
+
+      }
 
 
       cout << /*答え*/ << endl;
