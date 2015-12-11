@@ -23,7 +23,8 @@ int main(){
       que.push(make_pair(FLAG,FLAG));
       for(;;){
             solve++;
-            map<P,bool> m;
+            bool f[w][h];
+            for(i=0;i<w*h;i++)cout << f[w][h]<<endl;
             for(;;){
                   //cout << que.size()<<endl;
                   P p = que.front();
