@@ -4,8 +4,7 @@ int main(){
       int n,count=0;
       cin>> n;
       int num[n];
-      for(int i= 0;i<n;i++)
-            cin>>num[i];
+      for(int i= 0;i<n;i++)cin>>num[i];
       bool flag=true;
       while(flag){
             flag=false;
@@ -17,7 +16,6 @@ int main(){
                   }
             }
       }
-      for(int i= 0;i<n-1;i++)
-            cout<<num[i]<<" ";
+      for(int i= 0;i<n-1;i++)cout<<num[i]<<" ";
       cout<<num[n-1]<<endl<<count<<endl;
 }
