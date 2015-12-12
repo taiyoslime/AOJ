@@ -4,7 +4,6 @@
 using namespace std;
 int dp[100005];
 int main(){
-      ios::sync_with_stdio(false);
       int n,tmp; cin >> n;
       fill(dp,dp+n,INF);
       for (int i = 0;i < n; i++){
