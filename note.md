@@ -13,3 +13,8 @@ else
 ##グラフ
 - 繋がっている&&「訪れていない」->push
 - 有向か無向か要確認
+
+##STL
+- vectorは重複可、map,setは不可
+      - vectorの重複消去はsort+unique+erase(ゴミ抜き)だが、mapに取込み直しとかすると楽
+- mapは連想配列、setはただの集合 
