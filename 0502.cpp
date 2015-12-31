@@ -2,7 +2,7 @@
 #include <string>
 using namespace std;
 int main(){
-      int d[6]={1,5,3,2,4,6}; //
+      int d[6]={1,5,3,2,4,6};
       int ctn=1,tmp;
       string str;
       cin>>tmp;
