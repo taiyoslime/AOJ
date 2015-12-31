@@ -2,10 +2,12 @@
 #include <string>
 using namespace std;
 int main(){
-      int d[]={1,5,3,2,4,6},ctn=1,tmp;
       string str;
-      while(cin>>tmp,!tmp){
+      int tmp;
+      while(cin>>tmp&&tmp){
+      int d[]={1,5,3,2,4,6},ctn=1;
       for(int i=0;i<tmp;i++){
+
             cin>>str;
             switch (str[0]) {
                   case 'N':
