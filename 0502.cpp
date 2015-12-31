@@ -4,8 +4,7 @@ using namespace std;
 int main(){
       int d[]={1,5,3,2,4,6},ctn=1,tmp;
       string str;
-      cin>>tmp;
-      if(!tmp)return 0;
+      while(cin>>tmp,!tmp){
       for(int i=0;i<tmp;i++){
             cin>>str;
             switch (str[0]) {
@@ -43,4 +42,5 @@ int main(){
             ctn+=d[0];
       }
       cout <<ctn <<endl;
+}
 }
