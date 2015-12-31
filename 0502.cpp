@@ -3,13 +3,12 @@
 #define sw(w,x,y,z) swap(d[w],d[x]);swap(d[x],d[y]);swap(d[y],d[z]);break;
 using namespace std;
 int main(){
-      string str;
-      int tmp;
+      string str;int tmp,i;
       while(cin>>tmp&&tmp){
             int d[]={1,5,3,2,4,6},ctn=1;
-            for(int i=0;i<tmp;i++){
+            for(i=0;i<tmp;i++){
                   cin>>str;
-                  switch (str[0]) {
+                  switch(str[0]){
                         case 'N':sw(0,3,5,1);
                         case 'E':sw(0,4,5,2);
                         case 'W':sw(2,5,4,0);
@@ -19,6 +18,6 @@ int main(){
                   }
                   ctn+=d[0];
             }
-            cout <<ctn <<endl;
+            cout<<ctn<<endl;
       }
 }
