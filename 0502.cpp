@@ -2,13 +2,12 @@
 #include <string>
 using namespace std;
 int main(){
-      int d[6]={1,5,3,2,4,6};
-      int ctn=1,tmp;
+      int d[]={1,5,3,2,4,6},ctn=1,tmp;
       string str;
       cin>>tmp;
       if(!tmp)return 0;
       for(int i=0;i<tmp;i++){
-            cin >> str;
+            cin>>str;
             switch (str[0]) {
                   case 'N':
                         swap(d[0],d[3]);
