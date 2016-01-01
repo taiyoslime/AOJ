@@ -1,4 +1,4 @@
-//STLのstack使ったやつは甘え
+//STLのstack使ったやつは甘え 
 #include <iostream>
 #include <string>
 #include <cstdlib>
