@@ -18,7 +18,6 @@ int solve(){
     }
     return point;
 }
-
 int main(){
     int a;
     cin>>a;
