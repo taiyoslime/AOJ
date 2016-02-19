@@ -20,12 +20,11 @@ else
 
 ##グラフ
 - 繋がっている&&「訪れていない」->push
-- 有向か無向か要確認
+- 有向か無向か要確認!
 
 ##STL
 - vectorの重複消去はsort+unique+erase(ゴミ抜き)だが、mapに取込み直しとかすると楽
 - vectorは重複可、map,setは不可
-    - vectorの重複消去はsort+unique+erase(ゴミ抜き)だが、mapに取込み直しとかすると楽
 - map,setはキーを自動的にソートしてる（当たり前）
 - set はvectorと比べても死ぬほど重いのでよっぽどのことがない限り
 
