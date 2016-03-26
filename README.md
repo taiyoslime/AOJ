@@ -2,7 +2,7 @@
 
 個人的なバックアップのためにOnline Judgeやその他で通したソースコードをあげてます
 ```
-./          : AOJ
+./         : AOJ
 ./unsolved : AOJ未AC
 ./atcoder  : Atcoder
 ./scaffold : 雛形（いらない）
