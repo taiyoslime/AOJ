@@ -16,7 +16,14 @@ int rec(int S, int v){
 		if(!(S >> u & 1) && d[v][u] != 0)
 			res = min(res , rec(S | 1 << u, u) + d[v][u]);
 	}
-	return dp[S][v] = res;
+	dp[S][v] = res;
+	for(int i=0;i<5;i++){
+		for(int j=0;j<32;j++)cout<<dp[j][i]<< " ";
+		cout<<endl;
+	}
+	cout<< "----------"<<endl;
+	return res;
+
 }
 
 int main(){
