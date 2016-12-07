@@ -15,3 +15,4 @@ int main(){
 	for(int u=0;u<p;u++)cin>>a>>b>>c,d[a][b]=c;
 	cout<<(INF==(a=rec(0,0))?-1:a)<<endl;
 }
+ 
