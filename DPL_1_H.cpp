@@ -1,8 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
-#define MAX 100000
+#define MAX 1000000
 int main(){
-	int n,w,a,b,dp[MAX],i,j;
+	long long n,w,a,b,dp[MAX],i,j;
 	fill(dp,dp+MAX,1e9+1);
 	dp[0]=0;
 	cin>>n>>w;
