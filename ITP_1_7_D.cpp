@@ -7,15 +7,5 @@ int main(){
 	cin>>n>>m>>l;
 	r(i,n)r(j,m)cin>>a[i][j];
 	r(i,m)r(j,l)cin>>b[i][j];
-	cout << "ha?"<<endl;
-	r(i,n){
-		r(j,l){
-			int sum=0;
-			r(k,m){
-				sum+=a[i][k]*b[k][j];
-			}
-			cout<<sum<<" ";
-		}
-		cout<<endl;
-	}
+	r(i,n)r(j,l){long long sum=0;r(k,m)sum+=a[i][k]*b[k][j];(j==l-1)?cout<<sum<<endl:cout<<sum<<" ";}
 }
