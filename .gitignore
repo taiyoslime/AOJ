@@ -1,2 +1,4 @@
 in
-*out
+*.out.*
+peda*
+.gdb_history
