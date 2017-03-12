@@ -16,7 +16,7 @@
 - Mac OS X El Captain 10.11.5
 
 ```
-$ g++ ${filename} -std=c++11 -Wall -O2
+$ g++ $(filename) -std=c++11 -Wall -O2
 ```
 
 #### [個人的に得た知見 - node.md](./note.md)
