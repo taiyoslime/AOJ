@@ -1,11 +1,14 @@
 #include <bits/stdc++.h>
 using namespace std;
+typedef long long ll;
 int main(){
-	int n,k,i,sum=0,p;cin>>n>>k;
-	for(i=0;i<k;i++){
+	ll n,k,sum[100001],i,p,ans=0;
+	cin>>n>>k;
+	sum[0] = 0;
+	for(i=0;i<n;i++){
 		cin>>p;
-		if(min(n-i,i)<k)sum+=p*(min(n-i,i)+1);
-		else sum+=k*p;
+		sum[i+1] = sum[i] + p;
 	}
-	cout << sum;
+	for(i=0;i<n-k+1;i++)ans += sum[i+k] - sum[i];
+	cout << ans << endl;
 }
