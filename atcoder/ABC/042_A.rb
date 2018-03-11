@@ -1,2 +1,1 @@
-a = gets.split.map(&:to_i)
-puts ()
+puts gets.split.sort*""=="557"?:YES: :NO

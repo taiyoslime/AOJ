@@ -1,0 +1,1 @@
+puts `dd`[?Y]?:Four: :Three
