@@ -2,3 +2,4 @@ in
 *.out.*
 peda*
 .gdb_history
+test

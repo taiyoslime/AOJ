@@ -1,0 +1,1 @@
+a,b=gets.split.map(&:to_i);print gets=~/\d{#{a}}-\d{#{b}}\n/?"Yes":"No"

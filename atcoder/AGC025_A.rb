@@ -1,0 +1,1 @@
+p (n=gets.chars.map(&:to_i).reduce(:+))<2?10:n
